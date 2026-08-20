@@ -4,7 +4,7 @@ const captions=["Your smile ❤️","A moment together","Us ✨","Pretty as alwa
 function confetti(n=90){for(let i=0;i<n;i++){const e=document.createElement("i");e.style.cssText=`position:fixed;z-index:110;width:8px;height:14px;top:-20px;left:${Math.random()*100}vw;background:${["#ff5b95","#ffb2ca","#a979ff","#fff"][Math.floor(Math.random()*4)]};animation:fall ${2+Math.random()*3}s linear forwards`;document.body.appendChild(e);setTimeout(()=>e.remove(),5500)}}
 $("#open").onclick=()=>{$("#intro").classList.add("hide");audio.play().then(()=>{playing=true;$("#music").textContent="♫"}).catch(()=>{});confetti(120)};
 $("#music").onclick=()=>{if(playing){audio.pause();playing=false;$("#music").textContent="♪"}else{audio.play();playing=true;$("#music").textContent="♫"}};
-$("#theme").onclick=()=>document.body.classList.toggle("light");$("#maybe").onclick=()=>alert("Jawabannya harus YES dong 😜❤️");
+$("#theme").onclick=()=>document.body.classList.toggle("light");$("#maybe").onclick=()=>alert("Jawabannya harus YES dong 😚❤️");
 function modal(t){$("#msg").innerHTML=t+"<br><br><b>I love you. Always. ❤️</b>";$("#modal").classList.add("show")}
 $("#yes").onclick=()=>{confetti(160);modal("Aku simpan jawaban itu ya. ❤️<br><br>Mari kita buat lebih banyak cerita, perjalanan, foto, dan alasan untuk tetap memilih satu sama lain.")};
 $("#final").onclick=()=>modal("Kalau suatu hari kamu membuka website ini lagi, semoga kamu masih tersenyum. Terima kasih sudah hadir. Selamat ulang tahun, sayang. Semoga panjang umur, sehat selalu, bahagia terus, dan semoga aku bisa menemani banyak ulang tahunmu berikutnya.");
