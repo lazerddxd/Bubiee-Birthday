@@ -1,0 +1,1 @@
+var builder=WebApplication.CreateBuilder(args);var app=builder.Build();app.UseDefaultFiles();app.UseStaticFiles();app.MapGet("/api/health-csharp",()=>Results.Ok(new{ok=true,runtime=".NET 8 / ASP.NET Core"}));app.Run();
